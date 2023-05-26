@@ -1,0 +1,16 @@
+# ignore build and devel file:
+*/build/
+*/devel/
+*/logs/
+
+#catkin files:
+*/.catkin_workspace
+.catkin_workspace
+*/.catkin_tools
+.catkin_tools
+
+# ignore IDE files:
+.vscode/
+
+# make files
+**/build-uno/
