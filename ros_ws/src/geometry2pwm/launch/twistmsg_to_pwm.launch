@@ -1,0 +1,11 @@
+<launch>
+    <arg name="max_pwm" default="255" />
+    <arg name="min_pwm" default="100" />
+    <arg name="wheel_sep" default="0.205" />
+
+    <node name="twist_to_pwm" pkg="geometry2pwm" type="basic_remote_sub.py" output="screen" >
+        <param name="MAX_PWM" value="$(arg max_pwm)" />
+        <param name="MIN_PWM" value="$(arg min_pwm)" />
+        <param name="WHEEL_SEP" value="$(arg wheel_sep)" />
+    </node>
+</launch>
