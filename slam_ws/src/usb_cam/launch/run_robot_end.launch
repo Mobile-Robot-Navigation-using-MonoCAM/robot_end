@@ -1,0 +1,6 @@
+<launch>
+
+  <include file="$(find robot_dynamic)/launch/twist_to_pwm.launch"/>
+  <include file="$(find usb_cam)/launch/usb_camera.launch"/>
+
+</launch>
